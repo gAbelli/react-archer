@@ -60,7 +60,7 @@ export function computeStartingAnchorPosition(
   if (startingAnchorOrientation === 'top' || startingAnchorOrientation === 'bottom') {
     return {
       xAnchor1: xStart,
-      yAnchor1: yStart + (yEnd - yStart) / 2,
+      yAnchor1: yEnd - 10,
     };
   }
 
@@ -90,7 +90,7 @@ export function computeEndingAnchorPosition(
   if (endingAnchorOrientation === 'top' || endingAnchorOrientation === 'bottom') {
     return {
       xAnchor2: xEnd,
-      yAnchor2: yEnd - (yEnd - yStart) / 2,
+      yAnchor2: yEnd - 10,
     };
   }
 
