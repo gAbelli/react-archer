@@ -47,7 +47,6 @@ var config = {
   optimization: {
     minimizer: [
       new TerserPlugin({
-        cache: true,
         parallel: true,
         terserOptions: {
           compress: {
